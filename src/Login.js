@@ -18,7 +18,7 @@ const Login = () => {
   }, []);
 
   async function loginHandle() {
-    let result = await fetch("http://localhost:8000/login", {
+    let result = await fetch("https://sumanxenonbackend.herokuapp.com/login", {
       method: "post",
       body: JSON.stringify({ email, password }),
       headers: {

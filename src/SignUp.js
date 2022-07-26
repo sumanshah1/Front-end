@@ -19,7 +19,7 @@ const SignUp = () => {
     const getData= async ()=>{
         
     console.log(name, email, password)
-    let  result = await fetch('http://localhost:8000/register',{
+    let  result = await fetch('https://sumanxenonbackend.herokuapp.com/register',{
       method:'post',
       body:JSON.stringify({name, email, password}),
       headers:{
